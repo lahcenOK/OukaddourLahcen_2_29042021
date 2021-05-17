@@ -1,0 +1,268 @@
+/* Définition d'une nouvelle police nommée Raleway */
+@font-face {   font-family: 'Raleway';
+        src: url('fonts/Raleway-SemiBold.ttf'),
+             url('fonts/Raleway-Bold.ttf'),
+             url('fonts/Raleway-Black.ttf');
+}
+
+body{
+    margin:auto;
+    font-family: 'Raleway', 'Arial' ;
+}
+
+#main_Container{
+    width: 96%; 
+    margin:auto;
+}
+
+#header{
+    display:flex;
+    width: 100%;
+}
+
+#header .Box{
+    min-height: 50px;   
+}
+
+#header .Box:nth-child(1) {
+    flex:3;  
+} 
+
+#header .Box:nth-child(2){
+    flex:2; 
+    padding-top:  15px; 
+}
+    
+#header .Box:nth-child(3){
+    flex:1; 
+    align-self: flex-end;
+    position:relative;
+    padding-top:  15px; 
+}
+/* Menu navigation */
+.navigation {      
+    padding: 0; margin: 0;      
+    text-align: left;
+}
+
+.navigation li {
+    list-style-type: none ;     
+    display: inline;
+}
+    
+.navigation a {
+    display:inline-block;
+	margin: 0 50px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color:blue;
+    border-bottom: 3px solid #1020af;
+}
+/*recherche */
+
+#Recherche
+{
+   
+    
+}
+
+
+/* Style section Hébergement */
+#Hebergement
+{
+    display:flex;    
+    
+}
+#HebergementResultat
+{
+    background-color: #F2F2F2;
+    flex: 5;    
+    padding: 10px 30px 0px 30px  ;
+    border-radius: 1em;
+    margin-right: 2%;
+}
+
+#HebergementResultat .Box_main{
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+#HebergementResultat .Box{
+    width: 30%;
+    height: 150px;    
+    background-color: #FFF;
+    border: 1px black solid;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+#HebergementPopulaire
+{
+    background-color: #F2F2F2;
+    flex: 2;
+    min-height: 50px;
+    padding: 10px 30px 0px 30px  ;
+    border-radius: 1em;
+}
+
+#HebergementPopulaire .Box{    
+    height: 100px;    
+    background-color: #FFF;
+    border: 1px black solid;
+    border-radius: 1em;
+    margin:auto;
+    margin-bottom: 2em;
+}
+
+/* Style section Activités */
+
+#activites {	
+    padding: 10px 30px 0px 30px  ;
+}
+
+#activites .Box_main {
+	display: grid;
+	grid-template-columns: 24% 24% 24% 24%;
+	grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+	grid-column-gap: 1em;
+	min-height: 600px;
+	
+}
+
+#activites .Box {
+	margin: 2em 0em 2em -1em;
+	max-height: 100%;
+	width: 100%;
+	border: solid 1px #000;
+	border-radius: 1em;  
+	
+}
+
+#activites .Box:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 11;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#activites .Box:nth-child(2) {
+	grid-row-start: 1;
+	grid-row-end: 8;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+
+#activites .Box:nth-child(3) {
+	grid-row-start: 7;
+	grid-row-end: 11;
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+
+#activites .Box:nth-child(4) {
+	grid-row-start: 1;
+	grid-row-end: 11;
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+
+#activites .Box:nth-child(5) {
+	grid-row : 1 / 7;
+	grid-column-start: 4;
+	grid-column-end: 5;	
+}
+
+#activites .Box:nth-child(6) {
+	grid-row-start: 6;
+	grid-row-end: 11;
+	grid-column-start: 4;
+	grid-column-end: 5;	
+}
+
+
+
+
+
+/* Style section footer */
+
+#footer
+{
+   background-color: #F2F2F2;
+   display: flex;
+   padding: 2em;
+   justify-content: space-around;
+}
+
+#footer .Box
+{
+	width: 30%;
+    height: 200px;
+}
+
+/* style Mobile */
+
+@media (max-width: 640px) {
+
+    #header
+    {
+    flex-direction: column;
+    }
+  
+    #header .Box:nth-child(3){
+       align-self: flex-end;
+       position:absolute;top:5px; 
+    }
+
+
+
+    #Hebergement
+    {
+        flex-direction:column-reverse;
+        
+    }
+	
+    #HebergementResultat {
+        margin-right: 0;       
+     }
+
+    #HebergementResultat .Box_main{
+        flex-direction:column-reverse;
+        margin-right: 2%;
+     }
+
+     #HebergementResultat .Box{
+        width:100%;
+        margin:auto;
+        margin-bottom:10px;
+        
+     }
+
+
+     #HebergementPopulaire {
+        
+        margin-bottom: 20px;
+     }
+
+     #activites .Box_main {
+        display: flex;
+        flex-direction: column;        
+     }
+
+     #activites .Box {
+        min-height:150px;
+        width:100%;
+        margin:auto;
+        margin-bottom:10px;    
+     }
+
+     #footer {
+        
+        flex-direction: column;        
+     }
+     #footer .Box {        
+        width:100%; 
+        margin-bottom: 1em;     
+     }
+}
