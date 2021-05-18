@@ -11,10 +11,10 @@
 </head>
 <body>
     <div id="main_Container">
+<!--------header----------->
         <section id="header">
             <div id="logo" class="Box">
         
-        <!--------header----------->
                 <a href="images/logo/Reserviax.png">
                     <img src="images/logo/Reserviax.png" alt="logo Reservia" width="95" height="45">
                 </a>
@@ -27,26 +27,34 @@
             </nav>
             <div id="inscription" class="Box"><a href="#">Inscription</a></div>
         </section>
-<!--section recherche------>
+
+<!--section Recherche------>
         <section id="Recherche">
             <h1 id="Titre">Trouvez votre hébergement pour des vacances de rêve</h1>
             <h4> En plein cente ville ou en plein nature</h4>
-            
-            <form method="post" action="#">
-                  <i class="fas fa-map-marker-alt"></i>
-                   <label  for="ville"> </label> 
-                <input type="text" name="ville" size="25" style="height:35px;" />
-                <input type="submit" value="Recherche"size="25" style="height:35px;" />
+
+            <form class="formulaire"  method="post" action="#">
+                <span class="map">
+                    <i class="fas fa-map-marker-alt"></i>
+               </span> 
+               <div class="recherche_ville">
+                    <p>
+                        <input type="search" placeholder="Marseille, France"/>
+                    </p>
+                </div>  
+                <div class="boutonrecherche">
+                     <input type="button" value="Rechercher"/>
+                 </div>    
+                <i class= "boutonrechercheicon fas fa-search"> </i>
             </form>
             
-           
-<!--section Filtre------>
             <div id="Filtre" class="Box">
                 <h3>Filtre</h3>
             </div>
            <div id="info">Plus de 500 logements sont disponibles dans cette ville</div> 
         </section>
-        
+
+<!--section Hebergement-->       
         <section id="Hebergement">        
             <div id="HebergementResultat">
                 <h2>Hébergement à Marseille</h2>
@@ -87,7 +95,7 @@
             </div>
         
         </section>
-    
+<!--section Activité---->   
         <section id="activites">
             <h2>Activités à Marseille</h2>
             <div class="Box_main">
@@ -112,6 +120,8 @@
             </div> 
         </section>
     </div>
+    
+<!--section Bas de page------>
     <section id="footer">
         <div class="Box">
             <h3> A propos</h3>

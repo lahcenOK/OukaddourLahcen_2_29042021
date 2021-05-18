@@ -58,14 +58,65 @@ body{
 
 .navigation a:hover {
     color:blue;
-    border-bottom: 3px solid #1020af;
+    border-bottom: 3px solid  #0065FC;
 }
 /*recherche */
 
-#Recherche
-{
-   
-    
+#Recherche {
+    display: flex;
+    flex-direction: column;
+      
+}
+#Recherche .formulaire {
+    width: 45%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#Recherche .map{
+    height: 45px;
+    min-width: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+   }
+#Recherche .recherche_ville{  
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid#F2F2F2; 
+}
+input{
+    border :none;
+    font-size: 20px;
+}
+
+#Recherche .boutonrecherche { 
+    height: 45px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #0065FC;
+    padding: 0px 20px 0px 20px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 20;
+}
+.boutonrecherche input{
+    background-color: #0065FC;
+    color: white;
+}
+.boutonrechercheicon {
+    display: none; 
 }
 
 
@@ -181,10 +232,6 @@ body{
 	grid-column-end: 5;	
 }
 
-
-
-
-
 /* Style section footer */
 
 #footer
@@ -215,8 +262,6 @@ body{
        position:absolute;top:5px; 
     }
 
-
-
     #Hebergement
     {
         flex-direction:column-reverse;
@@ -238,7 +283,6 @@ body{
         margin-bottom:10px;
         
      }
-
 
      #HebergementPopulaire {
         
@@ -265,4 +309,30 @@ body{
         width:100%; 
         margin-bottom: 1em;     
      }
+     #Recherche .formulaire {
+        width: 45%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;}
+
+    
+    .boutonrechercheicon { 
+        height: 45px;
+        width: 130px;
+        padding: 0 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: list-item;
+        background-color:  #0065FC;
+        padding: 0px 20px 0px 20px;
+        border-radius: 0px 20px 20px 0px;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+    } 
+    #Recherche .boutonrecherche { 
+        display: none;
+     }
+
 }
