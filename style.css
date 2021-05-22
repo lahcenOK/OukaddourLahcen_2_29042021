@@ -24,7 +24,7 @@ body{
     min-height: 50px;   
 }
 
-#header .Box:nth-child(1) {
+#header .Box:nth-child(1){
     flex:3;  
 } 
 
@@ -41,7 +41,6 @@ body{
     color: #0065FC;
     font-weight: bold;  
     text-decoration: none;
-
 }
 
 /* Menu navigation */
@@ -53,7 +52,6 @@ body{
 .navigation li {
     list-style-type: none ;     
     display: inline;
-    
 }
     
 .navigation a {
@@ -66,7 +64,8 @@ body{
     text-decoration: #0065FC;
     border-bottom: 3px solid  #0065FC;
 }
-/*recherche */
+
+/*Recherche */
 
 #Recherche {
     display: flex;
@@ -130,10 +129,12 @@ input{
 }
 
 /* Filtres */
+
 #filtre {
     display: flex;
     align-items: center;
-   }
+}
+
 #Filtre .Box_main {
     width: 70%;
     display: flex;
@@ -170,14 +171,13 @@ input{
     align-items: center;
     font-size: 20px;
     margin-right: 10px;
-    
 }
 
 #Filtre .Box:hover {
     cursor: pointer;
-    background-color: #DEEBFF;
-   
+    background-color: #DEEBFF;   
 }
+
 #info {
     width: 70%;
     display: flex;
@@ -185,7 +185,6 @@ input{
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 #info .iconefiltre{
@@ -203,12 +202,14 @@ input{
 }
 
 /* Style section Hébergement */
-#Hebergement
-{    display:flex; 
-    
+
+#Hebergement{   
+    display:flex;     
 }
-#HebergementResultat
-{
+
+/* Style HébergementResultat */
+
+#HebergementResultat{
     background-color: #F2F2F2;
     flex: 5;    
     padding: 0px 20px 0px 20px  ;
@@ -221,6 +222,7 @@ input{
    justify-content: space-between;
    flex-wrap: wrap;
 }
+
 #HebergementResultat .Box{
     width: 30%;
     height: 190px;
@@ -234,6 +236,7 @@ input{
     text-decoration: none;
     cursor: pointer;
 }
+
 #HebergementResultat  img {
     width: 99%;
     height: 110px;
@@ -241,10 +244,16 @@ input{
     border-radius: 20px 20px 0px 0px;
 }
 
-#HebergementResultat .legende {
-    color: black;
-    
+#HebergementResultat .infoheberge{
+    margin-left: 20px;
 }
+
+#HebergementResultat .legende {
+    color: black; 
+}
+
+
+/* Style Hebergement Plus Populaire */
 
 #HebergementPopulaire
 {
@@ -257,41 +266,47 @@ input{
     flex-direction: column;
 }
 
+#HebergementPopulairetitre {
+    justify-items: flex-start;
+}
+
 #HebergementPopulaire .Box{    
-    height: 130px;  
+    height: 150px;  
     display: flex;
     flex-direction: column;
     background-color: #FFF;
     border: 5px solid white; 
-    border-radius: 20px 20px 20px 20px;
     border-radius: 1em;
     margin:auto;
     margin-bottom: 1em;
 }
-#HebergementPopulaire .Hpopulaire{ 
-    display: flex;
-    line-height: 0px;
-}
 
+#HebergementPopulaire  .Hpopulaire{ 
+    display: flex;  
+}
 
 #HebergementPopulaire  img {
     width:150px;
-    height: 130px;
+    height: 150px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
 
-#HebergementPopulaire .legende{
-
-    color: black;
-    padding-left: 15px;
-}
-#HebergementPopulaire  .nbretoile {
+#HebergementPopulaire .infoheberge{
     margin-left: 20px;
-    padding-left: 25px;
-    margin: 0px;
-    padding: 0px;
 }
+
+#HebergementPopulaire .legende{
+    color: black;
+    margin-bottom: 45px;
+}
+
+.legende h4 {
+    line-height: 0px;
+    font-weight: bold;
+}
+    
+
 /* Style section Activités */
 
 #activites {	
@@ -302,32 +317,47 @@ input{
 	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
 	grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
-	grid-column-gap: 1em;
-	min-height: 600px;
-	
+	grid-column-gap: 2em;
+    min-height: 600px; 
 }
 
 #activites .Box {
-	margin: 2em 0em 2em -1em;
+    margin: 2em 0em 2em -1em;
 	max-height: 100%;
-	width: 100%;
-	border: solid 1px #000;
-	border-radius: 1em;  
-	
+    width: 100%;
+}
+    
+#activites .Box:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 2;
+ }
+
+ #activites .Activite{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(208, 208, 221);
+    border-radius: 1rem;
 }
 
-#activites .Box:nth-child(1) {
-	grid-row-start: 1;
-	grid-row-end: 11;
-	grid-column-start: 1;
-	grid-column-end: 2;
+#activites .image_activite{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #activites .Box:nth-child(2) {
 	grid-row-start: 1;
 	grid-row-end: 8;
 	grid-column-start: 2;
-	grid-column-end: 3;	
+	grid-column-end: 3;	  
 }
 
 #activites .Box:nth-child(3) {
@@ -345,7 +375,8 @@ input{
 }
 
 #activites .Box:nth-child(5) {
-	grid-row : 1 / 7;
+	grid-row-start : 1 ;
+    grid-row-end: 7;
 	grid-column-start: 4;
 	grid-column-end: 5;	
 }
@@ -359,21 +390,34 @@ input{
 
 /* Style section footer */
 
-#footer
-{
-   background-color: #F2F2F2;
-   display: flex;
-   padding: 2em;
-   justify-content: space-around;
+#footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    padding: 2em;
+    justify-content: space-around;
 }
 
-#footer .Box
-{
-	width: 30%;
+#footer .Box{	
+    width: 30%;
     height: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* style Mobile */
+#footer .titre {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#footer .sous_titre {
+    font-size: 13px;
+    line-height: 0px;
+}
+
+
+/***** style Mobile****** */
 
 @media (max-width: 640px) {
 
@@ -388,61 +432,13 @@ input{
        top:5px; 
     }
 
-    #Hebergement
-    {
-        flex-direction:column-reverse;
-        
-    }
-	
-    #HebergementResultat {
-          margin-right: 0;       
-     }
-
-     /* flex-direction:column-reverse;*/
-    #HebergementResultat .Box_main{
-       
-        margin-right: 2%;
-     }
-
-     #HebergementResultat .Box{
-        width:100%;
-        margin:auto;
-        margin-bottom:10px;
-        
-     }
-
-     #HebergementPopulaire {
-        
-        margin-bottom: 20px;
-     }
-
-     #activites .Box_main {
-        display: flex;
-        flex-direction: column;        
-     }
-
-     #activites .Box {
-        min-height:150px;
-        width:100%;
-        margin:auto;
-        margin-bottom:10px;    
-     }
-
-     #footer {
-        
-        flex-direction: column;        
-     }
-     #footer .Box {        
-        width:100%; 
-        margin-bottom: 1em;     
-     }
-     #Recherche .formulaire {
+    #Recherche .formulaire {
         width: 45%;
         height: 40px;
         display: flex;
-        flex-direction: row;}
+        flex-direction: row;
+    }
 
-    
     .boutonrechercheicon { 
         height: 45px;
         width: 130px;
@@ -458,8 +454,54 @@ input{
         font-size: 25px;
         text-align: center;
     } 
+
     #Recherche .boutonrecherche { 
         display: none;
     }
 
+    #Hebergement
+    {
+        flex-direction:column-reverse; 
+    }
+	
+    #HebergementResultat {
+          margin-right: 0;       
+     }
+
+     /*flex-direction:column-reverse;*/
+    #HebergementResultat .Box_main{
+        margin-right: 2%;
+     }
+
+     #HebergementResultat .Box{
+        width:100%;
+        margin:auto;
+        margin-bottom:10px;
+     }
+
+    #HebergementPopulaire {
+        margin-bottom: 20px;
+     }
+
+    #activites .Box_main {
+        display: flex;
+        flex-direction: column;             
+     }
+
+     #activites .Box {
+        min-height:150px;
+        width:100%;
+        margin:auto;
+        margin-bottom:10px; 
+     }  
+     
+    #footer {
+        flex-direction: column;  
+    }
+
+     #footer .Box {        
+        width:100%; 
+        margin-bottom: 1em;   
+        margin-left: 1em;  
+     }
 }
