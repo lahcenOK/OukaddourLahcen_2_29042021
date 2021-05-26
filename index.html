@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia Hébergement de Vacances</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="stylem.css">
+    <link rel="stylesheet" href="stylet.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" >
 
 </head>
 <body>
     <div id="main_Container">
         <!--------header----------->
-        <section id="header">
-            <div id="logo" class="Box">
+        <header>
+             
+             <div id="logo" class="Box">
                 <a href="images/logo/Reserviax.png">
                     <img src="images/logo/Reserviax.png" alt="logo Reservia" width="95" height="45">
                 </a>
             </div>
             <nav class="Box">
                 <ul class="navigation">
-                    <li><a  href="Hebergement">Hébergements</a></li>
-                    <li><a  href="activites">Activités</a></li>
+                    <li><a class="ha1"href="#Hebergement">Hébergements</a></li>
+                    <li><a  class="ha2" href="#Activites">Activités</a></li>
                 </ul>
             </nav>
             <div id="inscription" class="Box"><strong>S'inscrire</strong></a>
             </div>
-        </section>
+        </header>
 
         <!--section Recherche------>
         <section id="Recherche">
@@ -43,7 +47,7 @@
                     </p>
                 </div>  
                 <div class="boutonrecherche">
-                    <input type="button" value="Rechercher"/>
+                    <input type="submit" value="Rechercher"/>
                  </div>    
                 <i class= "boutonrechercheicon fas fa-search"> </i>
             </form>
@@ -95,7 +99,7 @@
                 <h2>Hébergement à Marseille</h2>
                 <div class="Box_main">
                     <div class="Box">
-                        <a  href="img/hebergements" style="text-decoration:none">
+                        <a  href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergements">
                             </div>
@@ -111,7 +115,7 @@
                         </a> 
                     </div>
                     <div class="Box">
-                        <a  href="img/hebergements" style="text-decoration:none">
+                        <a  href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
                             </div>
@@ -127,7 +131,7 @@
                         </a> 
                     </div>
                     <div class="Box">
-                        <a  href="img/hebergements" style="text-decoration:none">
+                        <a  href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hebergements">
                             </div>
@@ -143,7 +147,7 @@
                         </a> 
                     </div>
                     <div class="Box">
-                        <a  href="img/hebergements" style="text-decoration:none">
+                        <a  href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hebergements">
                             </div>
@@ -159,7 +163,7 @@
                         </a> 
                     </div>
                     <div class="Box">
-                        <a  href="img/hebergements" style="text-decoration:none">
+                        <a  href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hebergements">
                             </div>
@@ -175,7 +179,7 @@
                         </a> 
                     </div>
                     <div class="Box">
-                        <a  href="img/hebergements" style="text-decoration:none">
+                        <a  href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements">
                             </div>
@@ -196,10 +200,10 @@
 
             <!--Hebergement Plus Populaire--> 
             <div id="HebergementPopulaire">
-                <h2 classe="titre">Les plus Populaires <i class="fas fa-chart-line chart-line-black"></i> </h2>
+                <h2>Les plus Populaires <i class="fas fa-chart-line chart-line-black"></i> </h2>
                 <div class="Box_main">           
                    <div class="Box">
-                        <a class="Hpopulaire" href="img/hebergements" style="text-decoration:none">
+                        <a class="Hpopulaire" href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hebergements">
                             </div>
@@ -216,7 +220,7 @@
                         </a>
                     </div>              
                     <div class="Box">
-                        <a  class="Hpopulaire" href="img/hebergements" style="text-decoration:none">
+                        <a  class="Hpopulaire" href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hebergements">
                             </div>
@@ -233,7 +237,7 @@
                         </a>
                     </div>
                     <div class="Box">
-                        <a class="Hpopulaire" href="img/hebergements" style="text-decoration:none">
+                        <a class="Hpopulaire" href="#" style="text-decoration:none">
                             <div>
                                 <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hebergements">
                             </div>
@@ -254,92 +258,92 @@
         </section>
 
         <!--section Activité---->   
-        <section id="activites">
+        <section id="Activites">
             <h2>Activités à Marseille</h2>
             <div class="Box_main">
                 <div class="Box">
-                    <a class="Activite" href="images/activites/"style="text-decoration:none">
-                        <img class="image_activite" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    <a class="Activite" href="#"style="text-decoration:none">
+                        <div>
+                            <img class="image_activite" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             alt="Vieux Port" />
-                        <div class="titre_activite">
-                            <p>Vieux Port </p>
                         </div>
+                        <h4>Vieux Port </h4>
                     </a>
                 </div> 
                 <div class="Box">
-                    <a class="Activite" href="images/activites/"style="text-decoration:none">              
-                        <img class="image_activite"
+                    <a class="Activite" href="#"style="text-decoration:none">  
+                        <div class="vue_activite">
+                            <img class="image_activite"
                                 src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                 alt="Fort de Pomègues" />
-                        <div class="titre_activite">
-                            <p>Fort de Pomègues</p>
                         </div>
+                        <h4>Fort de Pomègues</h4>
                     </a>
                 </div>
                 <div class="Box">
-                  <a class="Activite" href="images/activites/"style="text-decoration:none">
-                       
+                  <a class="Activite" href="#"style="text-decoration:none">
+                        <div class="vue_activite">
                             <img class="image_activite"
                                 src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg "
                                 alt="Îles du Frioul" />
-                      
-                        <div class="titre_activite3">
-                           <p>Îles du Frioul</p>
                         </div>
+                        <h4>Îles du Frioul</h4>
                     </a>   
                 </div>
                 <div class="Box">	
-                    <a class="Activite" href="images/activites/"style="text-decoration:none">                        
-                        <img class="image_activite"
+                    <a class="Activite" href="#"style="text-decoration:none">
+                        <div class="vue_activite">             
+                            <img class="image_activite"
                                 src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                                 alt="Parc national des Calanques"/>                            
-                        <div class="titre_activite">
-                            <p>Parc national des Calanques</p>
-                         </div>
+                        </div>
+                        <h4>Parc national des Calanques</h4>
                     </a>
                 </div>
                 <div class="Box">
-                    <a class="Activite" href="images/activites/"style="text-decoration:none">                    
-                        <img class="image_activite"
+                    <a class="Activite" href="#"style="text-decoration:none">
+                        <div class="vue_activite">                  
+                            <img class="image_activite"
                                     src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                                     alt="Notre-Dame-de-la-Garde"/>                        
-                        <div class="titre_activite">
-                            <p>Notre-Dame-de-la-Garde</p>
                         </div>
+                        <h4>Notre-Dame-de-la-Garde</h4>     
                     </a>
                 </div>
                 <div class="Box">
-                    <a class="Activite" href="images/activites/"style="text-decoration:none">                
-                        <img class="image_activite"
+                    <a class="Activite" href="#"style="text-decoration:none"> 
+                         <div class="vue_activite">          
+                            <img class="image_activite"
                                 src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                                 alt="Parc Longchamp"/>                        
-                        <div class="titre_activite">
-                            <p>Parc Longchamp</p>
                         </div>
-                    </a>
+                        <h4>Parc Longchamp</h4>
+                     </a>
                 </div>
             </div>
         </section>
     </div>
     
         <!--section Bas de page------>
-        <section id="footer">
-            <div class="Box">
-                <p class="titre"> A propos</p>
-                <p class="sous_titre">Foncionnement du site</p>
-                <p class="sous_titre">Conditions générales de vente</p>
-                <p class="sous_titre">Données et confiditialité</p>
-            </div>
-            <div class="Box">
-                <p class="titre"> Nos hébergements</p>
-                <p class="sous_titre">Charte qualité</p>
-                <p class="sous_titre">Soumettre votre hôtel</p>
-            </div>
-            <div class="Box">
-                <p  class="titre"> Assistance</p>
-                <p class="sous_titre">Centre d'aide</p>
-                <p class="sous_titre">Nous contacter</p>
+        <footer>
+            <div class="Box_main">
+                <div class="Box"> 
+                    <h4>A propos </h4>
+                    <a class="sous_titre" href="#">Foncionnement du site</a>
+                    <a class="sous_titre" href="#">Conditions générales de vente</a>
+                    <a class="sous_titre" href="#">Données et confiditialité</a>
+                </div>
+                <div class="Box">    
+                    <h4>Nos hébergements</h4>
+                    <a class="sous_titre"href="#">Charte qualité</a>
+                    <a class="sous_titre"href="#">Soumettre votre hôtel</a>
+                </div>
+                <div class="Box">
+                    <h4> Assistance</h4>
+                    <a class="sous_titre"href="#">Centre d'aide</a>
+                    <a class="sous_titre"href="#">Nous contacter</a>
+                </div>   
             </div>        
-        </section>    
+        </footer>    
 </body>
 </html>
