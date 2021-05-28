@@ -2,8 +2,7 @@
 
 @media (max-width: 640px) {
 
-    header
-    {
+    header{
     flex-direction: column;
     }
   
@@ -21,7 +20,8 @@
     }
     #Recherche .recherche_ville{  
         height: 40px;
-        width: 250px;}
+        width: 250px;
+    }
     .boutonrechercheicon { 
         height: 45px;
         width: 130px;
@@ -29,17 +29,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        display: list-item;
+      /*  display: list-item;*/
         background-color:  #0065FC;
         padding: 0px 20px 0px 20px;
         border-radius: 0px 20px 20px 0px;
         color: white;
         font-size: 25px;
-        text-align: center;
+        text-align: center;   
     } 
 
-    #Recherche .boutonrecherche { 
-        display: none;
+    #Recherche .boutonrecherche{
+        display:none ;
+        
     }
 
     #Hebergement {
@@ -75,10 +76,13 @@
     #Activites .Box {
     min-height: 150px;
     width: 100%;
-    margin: auto;
     margin-bottom: 10px;
      }  
      
+     #Activites .Box:nth-child(2) img{
+         height: 65%;
+    }
+
     /*bas de page */
     footer {
         display: flex;

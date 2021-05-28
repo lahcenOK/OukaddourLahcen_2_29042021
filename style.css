@@ -1,7 +1,7 @@
 /* Debut */
 body{
     margin:auto;
-    font-family: 'Raleway', 'Arial' ;
+    font-family: 'Raleway', 'Arial ';
 }
 
 #main_Container{
@@ -32,7 +32,7 @@ header .Box:nth-child(2){
 }
 
 header .Box:nth-child(3){
-    flex:1;   
+    flex:1; 
     display: flex;
     align-items: flex-end; 
     padding-bottom: 15px;
@@ -50,16 +50,20 @@ header .Box:nth-child(3){
 
 .navigation li {
     height: 70px;
-    display: flex;    
-    align-items: flex-end;  
-    margin-left: 87px;  
-}
+    display: flex;   
     
+    align-items: flex-end;  
+    margin-left: 87px;
+}
+ nav .ha{
+     display: flex;
+     justify-content: space-around;
+ }
+
 .navigation a {
-    /*margin-left: 60px;*/
     margin-right: 0px;
     text-decoration: none; 
-    display: flex;    
+    display: flex; 
     color: #000;
     text-align: center;
     
@@ -106,10 +110,12 @@ header .Box:nth-child(3){
 #Recherche .recherche_ville{  
     height: 40px;
     width: 800px;
+    display: flex;
+    align-items: center;
     border: 3px solid#F2F2F2; 
 }
 
-input{
+#Recherche input{
     border :none;
     font-size: 20px;
 }
@@ -125,25 +131,25 @@ input{
     border-radius: 0px 20px 20px 0px;
     color: white;
     font-size: 1rem;
-    text-align: center;  
+    text-align: center; 
 }
 
 .boutonrecherche input{
     background-color: #0065FC;
     color: white;
-    cursor: pointer;
 }
 
-.boutonrechercheicon {
-    display: none; 
-    color: white;
+#Recherche .boutonrechercheicon {
+      color: white;
 }
+
 
 /* Filtres */
 
 #Filtre {
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
 #Filtre .Box_main {
@@ -156,9 +162,6 @@ input{
 #Filtre .Box {
     margin-left: 25px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     font-size: 20px;
     border-radius: 25px;
     border: 3px solid #F2F2F2; 
@@ -192,7 +195,6 @@ input{
 #info {
     width: 70%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -249,7 +251,7 @@ input{
 }
 
 #HebergementResultat  img {
-    width: 99%;
+    width: 100%;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -257,13 +259,22 @@ input{
 
 #HebergementResultat .infoheberge{
     margin-left: 20px;
-    
+
+}
+#HebergementResultat .legende{
+    color: black;
+     max-width: 100%; 
+}
+#HebergementResultat .nbretoile{
+    color: royalblue;
 }
 
-#HebergementResultat .legende {
-    color: black; 
+.Hplus a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
-
 
 /* Style Hebergement Plus Populaire */
 
@@ -277,6 +288,7 @@ input{
     display: flex;
     flex-direction: column;
 }
+
 #HebergementPopulaire h2{
     display: flex;
     justify-content: space-between;
@@ -299,12 +311,13 @@ input{
     box-shadow: 0 0 20px rgb(208, 208, 221);
 }
 
+
 #HebergementPopulaire  .Hpopulaire{ 
     display: flex;  
 }
 
 #HebergementPopulaire  img {
-    width:150px;
+    width:120px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
@@ -317,18 +330,19 @@ input{
 #HebergementPopulaire .legende{
     color: black;
     margin-bottom: 45px;
+    max-width: 100%;
 }
 
 .legende h4 {
     line-height: 0px;
     font-weight: bold;
+    white-space: pre-line;
 }
     
-
 /* Style section Activités */
 
 #Activites {	
-    padding: 10px 30px 0px 30px  ;
+    padding: 10px 0px 0px 40px  ;
 }
 
 #Activites .Box_main {
@@ -343,48 +357,45 @@ input{
     margin: 2em 0em 2em -1em;
 	max-height: 100%;
     width: 100%;
-
-   position: relative;
-   border-radius: 1rem; 
+    border-radius: 2rem; 
     box-shadow: 0 0 20px rgb(208, 208, 221);
+
 }
 
-/* #Activites .Activite{
+ #Activites .Activite{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     margin: 0;
-   height: 100%;
-   flex-direction: column;display: flex;
-    overflow: hidden;
-   
     
-    position: relative;
-    flex: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;*/
-
-
+ } 
+   
 #Activites .image_activite{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  border-radius: 20px;
-  margin: 0;
-    
+    border-radius: 20px;
+    margin: 0;
+    object-fit: cover; 
+    display: inline-block;
 }
-/*#Activites  .vue_activite{
-    /*position: relative;
-    flex: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
-    text-decoration: none;
-    color: black;
-    }*/
+#Activites  .vue_activite{
+    height: 100%;
+    margin: 0px;
+
+    }
     
 #Activites h4 {
+    position: absolute;
     font-weight: bold;
     color: black;
-    margin-left: 20px;
+    width: 95%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 0 20px 5%;
+    bottom: 0;
+    margin: 0px;
 }
 
 #Activites .Box:nth-child(1) {
@@ -398,8 +409,15 @@ input{
     grid-row-start: 1;
 	grid-row-end: 8;
 	grid-column-start: 2;
-	grid-column-end: 3;	  
+	grid-column-end: 3;	 
+    display: inline-block;
+
 }
+
+/*.container img {
+    width: 50px; 
+    height: 50px;
+}*/
 
 #Activites .Box:nth-child(3) {
 	grid-row-start: 7;
@@ -438,7 +456,6 @@ footer{
     justify-content:flex-start;
     align-items: center;
 }
-
 
 footer .Box_main{	
     display: flex;
