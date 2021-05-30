@@ -35,3 +35,5 @@ Objectif  : Intégration de la maquette d'un site d'hebergement des vacances de 
 - Le HTML et le CSS doivent être séparés et le dossier doit être organisé
 - Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
 - Le site doit être responsive
+# Découpage de la maquette :
+![image](https://user-images.githubusercontent.com/83468136/120115015-1eb4b280-c182-11eb-9423-b5b1be8e3a95.png)
