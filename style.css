@@ -1,4 +1,4 @@
-/* Debut */
+/* Style Descktop */
 
 body{
     margin:auto;
@@ -60,6 +60,11 @@ header .Box:nth-child(3){
     border-top: 3px solid  #0065FC;
 }
 
+.lien_heberge {
+    text-decoration: none;
+    color:blue;
+}
+
 .menunav_active {
     width:160px;
     height: 60px;
@@ -69,23 +74,10 @@ header .Box:nth-child(3){
     border-top: 3px solid  transparent;
 }
 
-.lien_heberge {
-    text-decoration: none;
-    color:blue;
-}
-
 .lien_active {
     text-decoration: none;
     color: black;
 }
-
-.menu_inscrire {
-    text-decoration: none;
-    color: #0065FC ;
-    font-weight: bold; 
-    padding-right: 40px;
-    border-top: 3px solid  transparent;
- }
 
 .menunav_active :hover{
     width:160px;
@@ -97,8 +89,16 @@ header .Box:nth-child(3){
     cursor: pointer; 
     border-top: 3px solid  #0065FC;
 }
+
+.menu_inscrire {
+    text-decoration: none;
+    color: #0065FC ;
+    font-weight: bold; 
+    padding-right: 40px;
+    border-top: 3px solid  transparent;
+ }
      
-/*Recherche */
+/* Zone de Recherche */
 
 #Recherche {
     display: flex;
@@ -136,7 +136,6 @@ header .Box:nth-child(3){
 #Recherche input{
     border :none;
     font-size: 20px;
-    
 }
 
 #Recherche .boutonrecherche { 
@@ -162,7 +161,7 @@ header .Box:nth-child(3){
       color: white;
 }
 
-/* Filtres */
+/* Zone Filtres */
 
 #Filtre {
     display: flex;
@@ -188,8 +187,6 @@ header .Box:nth-child(3){
     font-size: 20px;
     border-radius: 25px;
     border: 3px solid #F2F2F2; 
-    
-
 }
 
 #Filtre .iconefiltre{
@@ -207,17 +204,15 @@ header .Box:nth-child(3){
 #Filtre .selection {
     display: flex;
     align-items: center;
-   /* height: 25px;*/
     font-size: 20px;
     padding-right: 10px;
-
 }
 
 #Filtre .Box:hover {
     cursor: pointer;
     background-color: #DEEBFF;   
 }
-
+/*Information*/
 #info {
     width: 70%;
     display: flex;
@@ -240,13 +235,13 @@ header .Box:nth-child(3){
     margin-right: 10px;
 }
 
-/* Style section Hébergement */
+/* Section Hébergement */
 
 #Hebergement{   
     display:flex;     
 }
 
-/* Style HébergementResultat */
+/* HébergementResultat */
 
 #HebergementResultat{
     background-color: #F2F2F2;
@@ -294,14 +289,14 @@ header .Box:nth-child(3){
       max-width: 100%;     
 }
 
-.Hplus a {
+.Afficheplus a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 20px;
 }
 
-/* Style Hebergement Plus Populaire */
+/*Hebergement Plus Populaire */
 
 #HebergementPopulaire
 {
@@ -332,7 +327,7 @@ header .Box:nth-child(3){
     box-shadow: 0 0 10px rgb(208, 208, 221);
 }
 
-#HebergementPopulaire  .Hpopulaire{ 
+#HebergementPopulaire  .lien_populaire{ 
     display: flex;  
 }
 
@@ -355,15 +350,15 @@ header .Box:nth-child(3){
     max-width: 100%;
 }
 
-.legende h4 {
+#HebergementPopulaire .legende h4 {
     line-height: 0px;
     font-weight: bold;
 }
     
-/* Style section Activités */
+/* Section Activités */
 
 #Activites {	
-    padding: 10px 0px 0px 40px  ;
+    padding: 10px 20px 0px 10px  ;
 }
 
 #Activites .Box_main {
@@ -375,7 +370,7 @@ header .Box:nth-child(3){
 }
 
 #Activites .Box {
-    margin: 2em 0em 3em -1em;
+    margin: 2em 0em 2em 0em;
 	max-height: 100%;
     width: 100%; 
     border-radius: 2rem; 
@@ -465,7 +460,7 @@ header .Box:nth-child(3){
 	grid-column-end: 5;	
 }
 
-/* Style section footer */
+/* Section footer */
 
 footer{
     width: 100%;

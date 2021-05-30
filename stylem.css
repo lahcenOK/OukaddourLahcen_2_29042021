@@ -1,7 +1,8 @@
 /***** style Mobile****** */
 
 @media (max-width: 640px) {
-
+   
+    /*Header*/
     header{
     flex-direction: column;
     }
@@ -10,6 +11,12 @@
        align-self: flex-end;
        position:absolute;
        top:5px; 
+    }
+
+    /*Navigation*/
+
+     .menunav {
+        border-bottom: 3px solid  #F2F2F2;
     }
 
     .menunav_heberge {
@@ -22,39 +29,11 @@
         padding-bottom: 15px;
     }
 
-    .menunav {
-        border-bottom: 3px solid  #F2F2F2;
-    }
     .menunav_active :hover {
         border-bottom: 3px solid  #0065FC;
-    }
+    } 
 
-
-    /*Filtre*/
-    #Filtre {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-    #Filtre .Box_main {
-        display: flex;
-        flex-wrap: wrap; 
-        margin-top: 0px;
-    }
-
-    #Filtre h3{
-        padding-top: 20px;
-        margin-left: 15px;
-    }
-    #Filtre .Box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap; 
-        margin-left: 15px;
-    }
-
-
-    /*Recherche */
+    /* Zone de Recherche */
 
     #Recherche .formulaire {
         width: 45%;
@@ -80,12 +59,38 @@
         font-size: 25px;
         text-align: center;   
     } 
-
     #Recherche .boutonrecherche{
-        display:none ;
-        
+        display:none ;  
+    }
+    /* Zone Filtres*/
+
+    #Filtre .Box_main {
+        display: flex;
+        flex-wrap: wrap; 
+        margin-top: 0px;
     }
 
+    #Filtre .Box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    margin-left: 15px;
+    }
+
+    #Filtre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    }  
+
+    #Filtre h3{
+    padding-top: 20px;
+    margin-left: 15px;
+    }
+    
+    /* Section Hébergement */
+
+    /*flex-direction:column-reverse*/
     #Hebergement {
         flex-direction:column-reverse; 
     }
@@ -95,7 +100,8 @@
         background-color: white; 
      }
 
-     /*flex-direction:column-reverse;*/
+    /* HébergementResultat */
+
     #HebergementResultat .Box_main{
         margin-right: 2%; 
      }
@@ -107,16 +113,19 @@
         box-shadow: 0 0 20px rgb(208, 208, 221);
      }
 
+     /*Hebergement Plus Populaire */
+
     #HebergementPopulaire {
         margin-bottom: 20px;
      }
-/* Section activités */
+
+    /* Section activités */
 
     #Activites .Box_main {
     display: flex;
     flex-direction: column;
-     
     }
+
     #Activites .Box {
     min-height: 150px;
     width: 100%;
@@ -126,9 +135,8 @@
     #Activites .Box:nth-child(2) {
         height: 250px;
     }
-   
-   
-    /*bas de page */
+      
+    /*Section footer */
     footer {
         display: flex;
         flex-direction: column;  

@@ -1,4 +1,4 @@
-/*  entre 6400px ET 1024px */
+/*  Style Tablette */
 @media (max-width : 1024px) and (min-width :640px) {
 
     header
@@ -9,6 +9,26 @@
     {   display:flex;
         width: 100%;
     }
+
+    #Hebergement {
+        flex-direction:column-reverse; 
+    }
+    #HebergementResultat .Box{
+        display: flex;
+     
+    }
+
+    #HebergementPopulaire .Box{    
+        display: flex;
+        flex-direction: column;
+     
+    }
+    #Activites {	
+        display: flex;
+        flex-direction: column;
+    }
+    
+
 
 }
    
