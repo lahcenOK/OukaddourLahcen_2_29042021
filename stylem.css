@@ -2,11 +2,18 @@
 
 @media (max-width: 640px) {
    
+    #main_Container{
+        width: 100%; 
+        margin: auto;
+    }
+
     /*Header*/
     header{
     flex-direction: column;
     }
-  
+    header .Box:nth-child(1){
+        margin-left: 15px;
+    }
     header .Box:nth-child(3){
        align-self: flex-end;
        position:absolute;
@@ -31,19 +38,24 @@
 
     .menunav_active :hover {
         border-bottom: 3px solid  #0065FC;
+        border-top: transparent;
+        padding-bottom: 15px;
     } 
 
     /* Zone de Recherche */
+    #Recherche{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     #Recherche .formulaire {
-        width: 45%;
         height: 40px;
         display: flex;
         flex-direction: row;
     }
     #Recherche .recherche_ville{  
         height: 40px;
-        width: 250px;
+        width: 230px;
     }
     .boutonrechercheicon { 
         height: 45px;
@@ -62,19 +74,23 @@
     #Recherche .boutonrecherche{
         display:none ;  
     }
+
     /* Zone Filtres*/
+    
+    #Filtre h3{
+    padding-top: 20px;
+    }
 
     #Filtre .Box_main {
         display: flex;
         flex-wrap: wrap; 
-        margin-top: 0px;
     }
 
     #Filtre .Box {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
-    margin-left: 15px;
+    margin-left: 0px;
     }
 
     #Filtre {
@@ -83,10 +99,6 @@
     align-items: flex-start;  
     }  
 
-    #Filtre h3{
-    padding-top: 20px;
-    margin-left: 15px;
-    }
     
     /* Section Hébergement */
 
@@ -117,6 +129,7 @@
 
     #HebergementPopulaire {
         margin-bottom: 20px;
+        border-radius: 0em;
      }
 
     /* Section activités */
@@ -124,29 +137,25 @@
     #Activites .Box_main {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     }
 
     #Activites .Box {
     min-height: 150px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     }    
     
     #Activites .Box:nth-child(2) {
-        height: 250px;
+        height: 210px;
     }
       
     /*Section footer */
     footer {
-        display: flex;
-        flex-direction: column;  
-    }
-
-    footer .Box {        
-        width:100%; 
-        margin-bottom: 1em;   
-        margin-left: 1em;  
-    }
+        width: 100%; 
+        margin-top: 30px;
+    
+     }
 
     .sous_titre:hover {
         cursor: pointer;
