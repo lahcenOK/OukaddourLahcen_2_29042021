@@ -9,6 +9,27 @@
     {   display:flex;
         width: 100%;
     }
+    #Filtre h3{
+        padding-top: 10px;
+        margin-left: 15px;
+    }
+
+    #Filtre {
+        flex-direction: row;
+        align-items: flex-start; 
+    }  
+
+    #Filtre .Box_main {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    #Filtre .Box {
+         margin-left: 15px;
+    }
+
+    /*Hebergement*/
 
     #Hebergement {
         flex-direction:column-reverse; 
@@ -23,6 +44,8 @@
         flex-direction: column;
      
     }
+
+    /*Activités*/
     #Activites {	
         display: flex;
         flex-direction: column;

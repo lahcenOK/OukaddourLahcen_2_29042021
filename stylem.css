@@ -78,28 +78,26 @@
     /* Zone Filtres*/
     
     #Filtre h3{
-    padding-top: 20px;
+        padding-top: 20px;
+        margin-left: 15px;
     }
+
+    #Filtre {
+        flex-direction: column;
+        align-items: flex-start;  
+    }  
 
     #Filtre .Box_main {
         display: flex;
         flex-wrap: wrap; 
+        margin-top: 0px;
     }
-
-    #Filtre .Box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-    margin-left: 0px;
-    }
-
-    #Filtre {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;  
-    }  
-
     
+    #Filtre .Box {
+       
+        margin-left: 15px;
+    }
+ 
     /* Section Hébergement */
 
     /*flex-direction:column-reverse*/
