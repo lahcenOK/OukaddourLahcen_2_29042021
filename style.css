@@ -137,10 +137,11 @@ header .Box:nth-child(3){
 
 #Recherche .recherche_ville{  
     height: 40px;
-    width: 25%;
+    width: 35%;
     display: flex;
     align-items: center;
-    border: 3px solid#F2F2F2; 
+    border-bottom: 3px solid#F2F2F2; 
+    border-top: 3px solid#F2F2F2; 
 }
 
 #Recherche input{
@@ -167,8 +168,9 @@ header .Box:nth-child(3){
     color: white;
 }
 
-#Recherche .boutonrechercheicon {
-      color: white;
+#Recherche .iconboutonrecherche {
+  display: none;
+  
 }
 
 /* Zone Filtres */
@@ -273,7 +275,7 @@ header .Box:nth-child(3){
     color: #000; 
     border-radius: 1em;
     margin-bottom: 1em;
-    background-color: white;
+    background-color:white;
     border: 5px solid white; 
     border-radius: 20px 20px 20px 20px;
     line-height: 0px;
@@ -349,8 +351,6 @@ header .Box:nth-child(3){
 }
 
 #HebergementPopulaire .infoheberge{
-    display:flex;
-    flex-direction: column;
     margin-left: 20px;
 }
 
@@ -380,13 +380,13 @@ header .Box:nth-child(3){
 }
 
 #Activites .Box {
-    margin: 2em 0em 2em 0em;
-	max-height: 100%;
     width: 100%; 
+	max-height: 100%;
+    margin: 2em 0em 3em 0em;
+    flex-direction: column;
+    display: flex;
     border-radius: 2rem; 
     box-shadow: 0 0 10px rgb(208, 208, 221);
-    display: flex;
-    flex-direction: column;
 }
 
  #Activites .Activite{
@@ -401,7 +401,7 @@ header .Box:nth-child(3){
 #Activites .image_activite{
     display: flex;
     flex-direction: column;
-     width: 100%;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     margin: 0;
@@ -498,7 +498,7 @@ footer .sous_titre {
     color: black;
     line-height: 2rem;
 }
-.sous_titre:hover {
+footer .sous_titre:hover {
     cursor: pointer;
     text-decoration-line: underline;
 }
