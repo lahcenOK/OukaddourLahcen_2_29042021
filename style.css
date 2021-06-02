@@ -22,9 +22,10 @@ header .Box
 }
 
 header .Box:nth-child(1){
-    flex:3;  
+    flex:7;  
     display: flex;
     align-items: flex-end;  
+    
 }
 
 header .Box:nth-child(2){
@@ -41,6 +42,7 @@ header .Box:nth-child(3){
     align-items: flex-end; 
     justify-content: space-around;
     padding-bottom: 15px;
+    
 }
   /* Navigation */
 
@@ -94,7 +96,7 @@ header .Box:nth-child(3){
     text-decoration: none;
     color: #0065FC ;
     font-weight: bold; 
-    padding-right: 40px;
+    padding-right: 5px;
     border-top: 3px solid  transparent;
  }
      
@@ -103,6 +105,14 @@ header .Box:nth-child(3){
 #Recherche {
     display: flex;
     flex-direction: column;
+}
+#Recherche h1 {
+   margin-bottom: 0px;
+}
+
+#Recherche h4 {
+    margin-top:5px;
+    margin-bottom: 30px;
 }
 
 #Recherche .formulaire {
