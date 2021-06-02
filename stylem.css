@@ -62,7 +62,7 @@
     .boutonrechercheicon { 
         height: 45px;
         width: 130px;
-        padding: 0 20;
+        padding: 0 20 0 0;
         display: flex;
         justify-content: center;
         align-items: center;
