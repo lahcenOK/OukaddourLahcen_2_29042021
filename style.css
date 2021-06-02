@@ -356,7 +356,7 @@ header .Box:nth-child(3){
 
 #HebergementPopulaire .legende{
     color: black;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
     max-width: 100%;
 }
 
@@ -365,6 +365,10 @@ header .Box:nth-child(3){
     font-weight: bold;
 }
     
+#HebergementPopulaire .nbretoile{
+    padding-top: 35px;
+}
+
 /* Section Activités */
 
 #Activites {	
